@@ -25,7 +25,7 @@
     - Color detection.
   - [X] learn-opencv-3-hours/chapter8/
     - Contours / Shape detection.
-  - [ ] learn-opencv-3-hours/chapter9/
+  - [X] learn-opencv-3-hours/chapter9/
     - Face detection.
   - [ ] learn-opencv-3-hours/project1/
     - Virtual paint.
