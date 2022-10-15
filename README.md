@@ -15,7 +15,8 @@
       and erode images.
   - [X] learn-opencv-3-hours/chapter3/
     - Resize and crop image.
-  - [ ] learn-opencv-3-hours/chapter4/
+  - [X] learn-opencv-3-hours/chapter4/
+    - Shape and text.
   - [ ] learn-opencv-3-hours/chapter5/
   - [ ] learn-opencv-3-hours/chapter6/
   - [ ] learn-opencv-3-hours/chapter7/
