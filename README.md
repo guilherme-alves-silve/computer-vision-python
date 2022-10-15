@@ -23,7 +23,7 @@
     - Joining images.
   - [X] learn-opencv-3-hours/chapter7/
     - Color detection.
-  - [ ] learn-opencv-3-hours/chapter8/
+  - [X] learn-opencv-3-hours/chapter8/
     - Contours / Shape detection.
   - [ ] learn-opencv-3-hours/chapter9/
     - Face detection.
