@@ -19,7 +19,7 @@
     - Shape and text.
   - [X] learn-opencv-3-hours/chapter5/
     - Warp Perspective.
-  - [ ] learn-opencv-3-hours/chapter6/
+  - [X] learn-opencv-3-hours/chapter6/
     - Joining images.
   - [ ] learn-opencv-3-hours/chapter7/
   - [ ] learn-opencv-3-hours/chapter8/
