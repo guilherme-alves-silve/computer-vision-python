@@ -22,10 +22,16 @@
   - [X] learn-opencv-3-hours/chapter6/
     - Joining images.
   - [ ] learn-opencv-3-hours/chapter7/
+    - Color detection.
   - [ ] learn-opencv-3-hours/chapter8/
+    - 
   - [ ] learn-opencv-3-hours/chapter9/
+    - 
   - [ ] learn-opencv-3-hours/project1/
+    - 
   - [ ] learn-opencv-3-hours/project2/
+    - 
   - [ ] learn-opencv-3-hours/project3/
+    - 
 - [ ] [Análise e Classificação de Faces: visão Computacional com OpenCV](https://cursos.alura.com.br/course/analise-classificacao-faces-visao-computacional-opencv)
 - [ ] [Visão computacional: detecção de texto em placas de carro](https://cursos.alura.com.br/course/visao-computacional-deteccao-texto-placas-carro)
