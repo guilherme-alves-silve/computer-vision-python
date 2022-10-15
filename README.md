@@ -7,9 +7,12 @@
 	- [X] reconhecimento-texto-ocr-opencv/desafio_orc.ipynb
 - [ ] [Learn OpenCV in 3 Hours with Python](https://www.youtube.com/watch?v=WQeoO7MI0Bs)
   - [X] learn-opencv-3-hours/chapter1/
-    - It's about reading images from files,
+    - Reading images from files,
       videos and webcam.
-  - [ ] learn-opencv-3-hours/chapter2/
+  - [X] learn-opencv-3-hours/chapter2/
+    - Convert, blur,
+      edge detection, dialate
+      and erode images.
   - [ ] learn-opencv-3-hours/chapter3/
   - [ ] learn-opencv-3-hours/chapter4/
   - [ ] learn-opencv-3-hours/chapter5/
