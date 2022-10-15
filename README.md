@@ -3,8 +3,8 @@
 ## Courses made
 
 - [X] [Visão Computacional: reconhecimento de texto com OCR e OpenCV](https://cursos.alura.com.br/course/visao-computacional-reconhecimento-texto-ocr-opencv)- [X] [Visão Computacional: reconhecimento de texto com OCR e OpenCV](https://cursos.alura.com.br/course/visao-computacional-reconhecimento-texto-ocr-opencv)
-	- [X] texto_ocr_opencv.ipynb
-	- [X] desafio_orc.ipynb
+	- [X] reconhecimento-texto-ocr-opencv/texto_ocr_opencv.ipynb
+	- [X] reconhecimento-texto-ocr-opencv/desafio_orc.ipynb
 - [ ] [Learn OpenCV in 3 Hours with Python](https://www.youtube.com/watch?v=WQeoO7MI0Bs)
   - [X] learn-opencv-3-hours/chapter1/
     - It's about reading images from files,
