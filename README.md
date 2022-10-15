@@ -12,26 +12,26 @@
   - [X] learn-opencv-3-hours/chapter2/
     - Convert, blur,
       edge detection, dialate
-      and erode images.
+      and erode images (Basic Functions).
   - [X] learn-opencv-3-hours/chapter3/
-    - Resize and crop image.
+    - Resize and cropping.
   - [X] learn-opencv-3-hours/chapter4/
-    - Shape and text.
+    - Shapes and text.
   - [X] learn-opencv-3-hours/chapter5/
     - Warp Perspective.
   - [X] learn-opencv-3-hours/chapter6/
     - Joining images.
-  - [ ] learn-opencv-3-hours/chapter7/
+  - [X] learn-opencv-3-hours/chapter7/
     - Color detection.
   - [ ] learn-opencv-3-hours/chapter8/
-    - 
+    - Contours / Shape detection.
   - [ ] learn-opencv-3-hours/chapter9/
-    - 
+    - Face detection.
   - [ ] learn-opencv-3-hours/project1/
-    - 
+    - Virtual paint.
   - [ ] learn-opencv-3-hours/project2/
-    - 
+    - Paper scanner.
   - [ ] learn-opencv-3-hours/project3/
-    - 
+    - Number plate detector.
 - [ ] [Análise e Classificação de Faces: visão Computacional com OpenCV](https://cursos.alura.com.br/course/analise-classificacao-faces-visao-computacional-opencv)
 - [ ] [Visão computacional: detecção de texto em placas de carro](https://cursos.alura.com.br/course/visao-computacional-deteccao-texto-placas-carro)
