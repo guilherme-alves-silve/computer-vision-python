@@ -29,9 +29,10 @@
     - Face detection.
   - [X] learn-opencv-3-hours/project1/
     - Virtual paint.
-  - [ ] learn-opencv-3-hours/project2/
+  - [X] learn-opencv-3-hours/project2/
     - Paper scanner.
   - [ ] learn-opencv-3-hours/project3/
     - Number plate detector.
 - [ ] [Análise e Classificação de Faces: visão Computacional com OpenCV](https://cursos.alura.com.br/course/analise-classificacao-faces-visao-computacional-opencv)
 - [ ] [Visão computacional: detecção de texto em placas de carro](https://cursos.alura.com.br/course/visao-computacional-deteccao-texto-placas-carro)
+- [ ] [Mastering OpenCV 4 with Python](https://www.packtpub.com/product/mastering-opencv-4-with-python)
