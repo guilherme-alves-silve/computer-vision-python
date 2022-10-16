@@ -27,7 +27,7 @@
     - Contours / Shape detection.
   - [X] learn-opencv-3-hours/chapter9/
     - Face detection.
-  - [ ] learn-opencv-3-hours/project1/
+  - [X] learn-opencv-3-hours/project1/
     - Virtual paint.
   - [ ] learn-opencv-3-hours/project2/
     - Paper scanner.
