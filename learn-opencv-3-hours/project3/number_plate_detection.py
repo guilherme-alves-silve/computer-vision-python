@@ -20,7 +20,6 @@ imgs_rois = []
 for img_path in imgs_path:
     img = cv2.imread(img_path)
     plates = plate_detector.detect(img)
-    print(plates)
     imgs_rois.extend(draw_plates_rect(plates, img))
     processed_imgs.append(img)
 
