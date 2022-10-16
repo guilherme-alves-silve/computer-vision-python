@@ -5,7 +5,7 @@
 - [X] [Visão Computacional: reconhecimento de texto com OCR e OpenCV](https://cursos.alura.com.br/course/visao-computacional-reconhecimento-texto-ocr-opencv)- [X] [Visão Computacional: reconhecimento de texto com OCR e OpenCV](https://cursos.alura.com.br/course/visao-computacional-reconhecimento-texto-ocr-opencv)
 	- [X] reconhecimento-texto-ocr-opencv/texto_ocr_opencv.ipynb
 	- [X] reconhecimento-texto-ocr-opencv/desafio_orc.ipynb
-- [ ] [Learn OpenCV in 3 Hours with Python](https://www.youtube.com/watch?v=WQeoO7MI0Bs)
+- [X] [Learn OpenCV in 3 Hours with Python](https://www.youtube.com/watch?v=WQeoO7MI0Bs)
   - [X] learn-opencv-3-hours/chapter1/
     - Reading images from files,
       videos and webcam.
@@ -31,8 +31,9 @@
     - Virtual paint.
   - [X] learn-opencv-3-hours/project2/
     - Paper scanner.
-  - [ ] learn-opencv-3-hours/project3/
+  - [X] learn-opencv-3-hours/project3/
     - Number plate detector.
+- [ ] [Advanced Computer Vision with Python - Full Course](https://www.youtube.com/watch?v=01sAkU_NvOY)
 - [ ] [Análise e Classificação de Faces: visão Computacional com OpenCV](https://cursos.alura.com.br/course/analise-classificacao-faces-visao-computacional-opencv)
 - [ ] [Visão computacional: detecção de texto em placas de carro](https://cursos.alura.com.br/course/visao-computacional-deteccao-texto-placas-carro)
 - [ ] [Mastering OpenCV 4 with Python](https://www.packtpub.com/product/mastering-opencv-4-with-python)
