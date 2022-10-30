@@ -53,6 +53,9 @@ class PoseDetector:
         return landmarks
 
     def draw_landmark(self, img, landmarks, body_part_num: int):
+        if not landmarks:
+            return
+
         elbow_landmark = landmarks[body_part_num]
         cv2.circle(img, (elbow_landmark[1], elbow_landmark[2]), 15, (0, 0, 255), cv2.FILLED)
 
@@ -62,7 +65,7 @@ def main():
     curr_time = 0
 
     pose_detector = PoseDetector()
-    cap = cv2.VideoCapture("C:\\Users\\Alves\\Desktop\\video_samples\\video_2.mp4")
+    cap = cv2.VideoCapture(0)
 
     while True:
         success, img = cap.read()

@@ -6,7 +6,7 @@ mp_draw = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose()
 
-cap = cv2.VideoCapture("C:\\Users\\Alves\\Desktop\\video_samples\\video_4.mp4")
+cap = cv2.VideoCapture(0)
 
 curr_time = 0
 prev_time = 0

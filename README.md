@@ -36,7 +36,7 @@
   - [ ] [Advanced Computer Vision with Python](https://www.youtube.com/watch?v=01sAkU_NvOY)
     - [X] Chapter 1 - Hand Tracking
     - [X] Chapter 2 - Pose Estimation
-    - [ ] Chapter 3 - Face Detection
+    - [X] Chapter 3 - Face Detection
     - [ ] Chapter 4 - Face Mesh
     - [ ] Project 1 - Gesture Volume Control
     - [ ] Project 2 - Finger Counter
