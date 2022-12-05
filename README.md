@@ -44,5 +44,6 @@
     - [ ] Project 4 - AI Virtual Painter
     - [ ] Project 5 - AI Virtual Mouse
 - [ ] [Análise e Classificação de Faces: visão Computacional com OpenCV](https://cursos.alura.com.br/course/analise-classificacao-faces-visao-computacional-opencv)
-- [ ] [Visão computacional: detecção de texto em placas de carro](https://cursos.alura.com.br/course/visao-computacional-deteccao-texto-placas-carro)
+- [X] [Visão computacional: detecção de texto em placas de carro](https://cursos.alura.com.br/course/visao-computacional-deteccao-texto-placas-carro)
+  - cv_detect_car_plate.ipynb
 - [ ] [Mastering OpenCV 4 with Python](https://www.packtpub.com/product/mastering-opencv-4-with-python)
