@@ -46,5 +46,10 @@
 - [ ] [Análise e Classificação de Faces: visão Computacional com OpenCV](https://cursos.alura.com.br/course/analise-classificacao-faces-visao-computacional-opencv)
 - [X] [Visão computacional: detecção de texto em placas de carro](https://cursos.alura.com.br/course/visao-computacional-deteccao-texto-placas-carro)
   - cv_detect_car_plate.ipynb
-- [ ] [Visão Computacional: detecção de movimento com OpenCV](https://cursos.alura.com.br/course/visao-computacional-deteccao-movimento-opencv)
+- [X] [Visão Computacional: detecção de movimento com OpenCV](https://cursos.alura.com.br/course/visao-computacional-deteccao-movimento-opencv)
+  - deteccao-movimento-opencv/aula1_remocao_fundo.py
+  - deteccao-movimento-opencv/aula2_trabalhando.py
+  - deteccao-movimento-opencv/aula3_mascaras.py
+  - deteccao-movimento-opencv/aula4_kernels_filtros.py
+  - deteccao-movimento-opencv/aula5_contador.py
 - [ ] [Mastering OpenCV 4 with Python](https://www.packtpub.com/product/mastering-opencv-4-with-python)
