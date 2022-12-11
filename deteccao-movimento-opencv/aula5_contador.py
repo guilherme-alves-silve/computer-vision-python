@@ -4,6 +4,7 @@ import numpy as np
 
 from time import sleep
 
+ESC = 27
 VIDEO = "Ponte.mp4"
 
 background_substractors = dict()
@@ -60,17 +61,34 @@ def centroide(x, y, w, h):
     cy = y + y1
     return cx, cy
 
+w_min = 40 # Largura minima retangulo
+h_min = 40 # Largura maxima retangulo
+offset = 2 # Erro permitido entre pixel
+linha_roi = 620 # Posição da linha de contagem (Region of Interest)
+carros = 0
+
+def set_info(detected, frame):
+    global carros
+    for x, y in detected:
+        if (linha_roi + offset) > y > (linha_roi - offset):
+            carros += 1
+            cv2.line(frame, (25, linha_roi), (1200, linha_roi), (0, 127, 255), 3)
+            detected.remove((x, y))
+            print(f"Carros detectados até o momento: {carros}")
+
+def show_info(frame, mask, show_mask=False):
+    text = f'Carros: {carros}'
+    cv2.putText(frame, text, (200, 70), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255), 5)
+    cv2.imshow("Video Original", frame)    
+    if show_mask:
+        cv2.imshow("Detectado", mask)
+
 for algorithm_type in ['KNN', 'GMG', 'CNT', 'MOG', 'MOG2']:
     background_substractors[algorithm_type] = create_background_substractor(algorithm_type)
 
-w_min = 30 # Largura minima retangulo
-h_min = 30 # Largura maxima retangulo
-offset = 10 # Erro permitido entre pixel
-linha_roi = 500 # Posição da linha de contagem (Region of Interest)
-carros = 0
-
 cap = cv2.VideoCapture(VIDEO)
 background_subtractor = create_background_substractor(algorithm_type)
+detected = []
 begin_tick = cv2.getTickCount()
 
 def main():
@@ -80,20 +98,33 @@ def main():
         if not has_frame:
             break 
 
-        frame = cv2.resize(frame, (0, 0), fx=0.5, fy=0.5)
-
         background_subtractor = background_substractors['GMG']
         mask = background_subtractor.apply(frame)
-        mask_filter = do_filter(mask, 'combine')
-        cars_after_mask = cv2.bitwise_and(frame, frame, mask=mask_filter)
+        mask = do_filter(mask, 'combine')
 
-        cv2.imshow("Frame", frame)
-        cv2.imshow("Mask Filter", cars_after_mask)
+        contorno, img = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        cv2.line(frame, (25, linha_roi), (1200, linha_roi), (255, 127, 0), 3)        
+        for i, c in enumerate(contorno):
+            x, y, w, h = cv2.boundingRect(c)
+            contorno_valido = (w >= w_min) and (h >= h_min)
+            if not contorno_valido:
+                continue
+
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+            centro = centroide(x, y, w, h)
+            detected.append(centro)
+            cv2.circle(frame, centro, 4, (0, 0, 255), -1)
         
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        set_info(detected, frame)
+        show_info(frame, mask)
+
+        if cv2.waitKey(1) == ESC:
             break
 
         end_tick = cv2.getTickCount()
         elapsed_tick = (end_tick - begin_tick) / cv2.getTickFrequency()
+
+    cap.release()
+    cv2.destroyAllWindows()
 
 main()
