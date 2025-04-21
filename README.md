@@ -2,6 +2,14 @@
 
 ## Courses made
 
+- [ ] [Mastering OpenCV with Python](https://courses.opencv.org/courses/course-v1:OpenCV+101+Beginners/course/)
+  - `conda create --name opencv-env python=3.11`
+  - `conda activate opencv-env`
+  - `python --version`
+  - `pip --version`
+  - `pip install --upgrade pip`
+  - `pip install -r requirements.txt`
+- [ ] [Computer Vision & Deep Learning Applications](https://courses.opencv.org/courses/course-v1:OpenCV+OpenCV-105+2019_T1/course/)
 - [X] [Visão Computacional: reconhecimento de texto com OCR e OpenCV](https://cursos.alura.com.br/course/visao-computacional-reconhecimento-texto-ocr-opencv)
 	- [X] reconhecimento-texto-ocr-opencv/texto_ocr_opencv.ipynb
 	- [X] reconhecimento-texto-ocr-opencv/desafio_orc.ipynb
