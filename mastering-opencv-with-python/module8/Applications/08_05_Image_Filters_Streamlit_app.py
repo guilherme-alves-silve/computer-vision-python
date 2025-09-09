@@ -1,6 +1,5 @@
 import io
 import base64
-import cv2
 from PIL import Image
 from filters import *
 
