@@ -66,9 +66,9 @@ def main():
     # Create a copy of original image.
     img_mask = img.copy()
     # Create a black copy of original image, acts as a mask.
-    inpaintMask = np.zeros(img.shape[:2], np.uint8)
+    inpaint_mask = np.zeros(img.shape[:2], np.uint8)
     # Create sketch using OpenCV Utility Class: Sketcher.
-    sketch = Sketcher('image', [img_mask, inpaintMask], lambda: ((255, 255, 255), 255))
+    sketch = Sketcher('image', [img_mask, inpaint_mask], lambda: ((255, 255, 255), 255))
 
     while True:
         ch = cv2.waitKey()
@@ -77,16 +77,16 @@ def main():
         if ch == ord('t'):
             # Use Algorithm proposed by Alexendra Telea: Fast Marching Method (2004)
             res = cv2.inpaint(
-                src=img_mask, inpaintMask=inpaintMask, inpaintRadius=3, flags=cv2.INPAINT_TELEA)
+                src=img_mask, inpaintMask=inpaint_mask, inpaintRadius=3, flags=cv2.INPAINT_TELEA)
             cv2.imshow('Inpaint Output using FMM', res)
         if ch == ord('n'):
             # Navier-Stokes, Fluid Dynamics, and Image and Video Inpainting (2001).
             res = cv2.inpaint(
-                src=img_mask, inpaintMask=inpaintMask, inpaintRadius=3, flags=cv2.INPAINT_NS)
+                src=img_mask, inpaintMask=inpaint_mask, inpaintRadius=3, flags=cv2.INPAINT_NS)
             cv2.imshow('Inpaint Output using NS Technique', res)
         if ch == ord('r'):
             img_mask[:] = img
-            inpaintMask[:] = 0
+            inpaint_mask[:] = 0
             sketch.show()
 
     print('Completed')

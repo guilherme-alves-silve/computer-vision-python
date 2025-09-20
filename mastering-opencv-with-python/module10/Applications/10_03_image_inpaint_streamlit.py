@@ -4,7 +4,6 @@ Run using: streamlit run 10_03_image_inpaint_streamlit.py
 """
 
 import streamlit as st
-import pathlib
 from streamlit_drawable_canvas import st_canvas
 import cv2
 import numpy as np
@@ -57,7 +56,7 @@ if uploaded_file is not None:
         drawing_mode="freedraw",
     )
     stroke = canvas_result.image_data
-
+    mask = None
     if stroke is not None:
 
         if st.sidebar.checkbox("show mask"):
@@ -70,11 +69,11 @@ if uploaded_file is not None:
     st.sidebar.caption("Happy with the selection?")
     option = st.sidebar.selectbox("Mode", ["None", "Telea", "NS", "Compare both"])
 
-    if option == "Telea":
+    if option == "Telea" and mask is not None:
         st.subheader("Result of Telea")
         res = cv2.inpaint(src=image, inpaintMask=mask, inpaintRadius=3, flags=cv2.INPAINT_TELEA)[:, :, ::-1]
         st.image(res)
-    elif option == "Compare both":
+    elif option == "Compare both" and mask is not None:
         col1, col2 = st.columns(2)
         res1 = cv2.inpaint(src=image, inpaintMask=mask, inpaintRadius=3, flags=cv2.INPAINT_TELEA)[:, :, ::-1]
         res2 = cv2.inpaint(src=image, inpaintMask=mask, inpaintRadius=3, flags=cv2.INPAINT_NS)[:, :, ::-1]
@@ -97,7 +96,7 @@ if uploaded_file is not None:
                 get_image_download_link(result2, "ns.png", "Download Output of NS"), unsafe_allow_html=True
             )
 
-    elif option == "NS":
+    elif option == "NS" and mask is not None:
         st.subheader("Result of NS")
         res = cv2.inpaint(src=image, inpaintMask=mask, inpaintRadius=3, flags=cv2.INPAINT_NS)[:, :, ::-1]
         st.image(res)
