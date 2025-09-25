@@ -1,5 +1,0 @@
-numpy
-streamlit==1.40.0
-streamlit_drawable_canvas
-opencv-python-headless
-pillow
