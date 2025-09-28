@@ -224,9 +224,9 @@ while src_has_frame & dst_has_frame:
     # Press q to save and exit.
     k = cv2.waitKey(1)
     if k == ord('q'):
-    	break 
+    	break
+
 cv2.destroyAllWindows()
 if 'video_writer' in locals():
     video_writer.release()
     print('Processing completed, video writer released.')
-
