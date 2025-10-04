@@ -22,12 +22,12 @@ def load_model():
     class_names = [name.split(",")[0] for name in image_net_names]
 
     # Load the neural network model.
-    model = cv2.dnn.readNet(model="DenseNet_121.caffemodel", config="DenseNet_121.prototxt", framework="Caffe")
+    model = cv2.dnn.readNet(model="models/DenseNet_121.caffemodel", config="models/DenseNet_121.prototxt", framework="Caffe")
     return model, class_names
 
 
 def classify(model, image, class_names):
-    """Performs inference and returns class name with highest confidence."""
+    """Performs inference and returns class name with the highest confidence."""
 
     # Remove alpha channel if found.
     if image.shape[2] == 4:
